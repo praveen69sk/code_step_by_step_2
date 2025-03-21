@@ -1,0 +1,24 @@
+{
+  "name": "crud_api_nodejs",
+  "version": "1.0.0",
+  "description": "Simple CRUD Application (NodeJS + Express Js + API + MongoDB)",
+  "main": "index.js",
+  "module": "type",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveen69sk/code_step_by_step_2.git"
+  },
+  "author": "Praveen S Kalawad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praveen69sk/code_step_by_step_2/issues"
+  },
+  "homepage": "https://github.com/praveen69sk/code_step_by_step_2#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0"
+  }
+}
