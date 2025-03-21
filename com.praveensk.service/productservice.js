@@ -1,4 +1,4 @@
-import { findByProductName, findAllProducts, saveProduct, updateProduct } from "../com.praveensk.repository/ProductRepository.js";
+import { findByProductName, findAllProducts, saveProduct, updateProduct, deleteProduct } from "../com.praveensk.repository/ProductRepository.js";
 
 const getProduct = () => {
     findByProductName();
@@ -16,4 +16,8 @@ const modifyProduct = async (oldData, newData) => {
     return await updateProduct(oldData, newData);
 }
 
-export {getProduct, getAllProducts, createProduct, modifyProduct}
+const removeProduct = async (id) => {
+    return await deleteProduct(id);
+}
+
+export {getProduct, getAllProducts, createProduct, modifyProduct, removeProduct}

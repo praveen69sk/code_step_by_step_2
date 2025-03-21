@@ -1,5 +1,5 @@
 import express from "express";
-import { getProduct, getAllProducts, createProduct, modifyProduct } from "../com.praveensk.service/productservice.js";
+import { getProduct, getAllProducts, createProduct, modifyProduct, removeProduct } from "../com.praveensk.service/productservice.js";
 
 const app = express();
 
@@ -20,6 +20,11 @@ const productsApi = () => {
 
   app.put('/:name', async (req, resp)=>{
     let data = await modifyProduct(req.params, req.body)
+    resp.send(data);
+  });
+
+  app.delete('/:id', async (req, resp)=>{
+    let data = await removeProduct(req.params.id);
     resp.send(data);
   });
 };
