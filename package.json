@@ -19,6 +19,7 @@
   "homepage": "https://github.com/praveen69sk/code_step_by_step_2#readme",
   "dependencies": {
     "express": "^4.21.2",
-    "mongodb": "^6.15.0"
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.12.1"
   }
 }
